@@ -5,7 +5,27 @@ object Basics {
     println(message)
 
     //Call the function
-    println(max(1, 2))
+    println(max(1, 2) + " is the largest number")
+
+    //Create an array where you dont know whats in it.
+    val fiveInts = new Array[Int](5)
+
+    //Create an array where you know the contents.
+    val fiveToone = Array(5,4,3,2,1)
+
+    //While Loop fill
+    var i=0
+    while(i < fiveInts.length){
+      fiveInts(i) = i
+      i+=1
+    }
+
+    i=0
+    //While Loop to print
+    while(i < fiveInts.length){
+      println(fiveInts(i) + " " + fiveToone(i))
+      i+=1
+    }
   }
 
   //Creating a function.
