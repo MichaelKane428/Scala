@@ -26,6 +26,9 @@ object Basics {
       println(fiveInts(i) + " " + fiveToone(i))
       i+=1
     }
+
+    //Use of the foreach command
+    fiveInts.foreach((fiveInts: Int) => println(fiveInts))
   }
 
   //Creating a function.
